@@ -5,7 +5,17 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1> Hey There !!</h1>
+	<h1> {{template_title}}</h1>
+	<form method='POST' action=''>{% csrf_token %}
+	
+	{{form.as_p}}	
+
+	<input type="submit" value="Sign up"></input>
+	
+	</form>
+	
+
+	 <p>{{user}}</p>
 
 </body>
 </html>
