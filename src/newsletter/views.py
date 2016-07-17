@@ -4,7 +4,7 @@ from .forms import SignUpForm
 
 
 def home(request):
-	title="This is a title"
+	title="Welcome"
 	form=SignUpForm(request.POST or None)
 
 	if form.is_valid():
